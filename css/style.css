@@ -9,6 +9,7 @@ body{
 }
 
 header{
+    padding: 5px 0px;
     background-color: orange;
 }
 /* UTILITY CLASS */
@@ -26,18 +27,24 @@ header{
 /* ////////////////////////////////// */
 
 .filters a{
+    padding: 3px;
+    color: #fff;
+    text-decoration: none;
     vertical-align: middle;
-
 }
 
 nav{
     align-items: center;
 }
+
 nav a svg{
+    padding: 2px;
     min-width: 1rem;
 }
 
+
 .header-logo img{
+    vertical-align: middle;
     max-width: 100px;
 }
 
@@ -47,3 +54,23 @@ nav a svg{
     align-items: center;
 
 }
+
+
+/* ///////////// MAIN //////////////// */
+
+.card{
+    background-color: #fff;
+    flex-basis: calc((100% - 2rem )/  3);
+    min-height: 100px;
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.contain-card{
+    padding: 2rem 0rem;
+    gap:  1rem;
+    flex-wrap: wrap;
+}
+
