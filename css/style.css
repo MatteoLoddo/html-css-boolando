@@ -1,0 +1,49 @@
+body{
+    background-color: #4d4d4d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: orange;
+}
+/* UTILITY CLASS */
+
+.container{
+    max-width: 960px;
+    margin: auto;
+}
+
+.d-flex{
+    flex-direction: row;
+    display: flex;
+}
+
+/* ////////////////////////////////// */
+
+.filters a{
+    vertical-align: middle;
+
+}
+
+nav{
+    align-items: center;
+}
+nav a svg{
+    min-width: 1rem;
+}
+
+.header-logo img{
+    max-width: 100px;
+}
+
+.container-header div{
+    padding: 10px 0px;
+    flex-grow: 1;
+    align-items: center;
+
+}
