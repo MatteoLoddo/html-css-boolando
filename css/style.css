@@ -1,5 +1,5 @@
 body{
-    background-color: #4d4d4d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *{
@@ -9,14 +9,21 @@ body{
 }
 
 header{
+    z-index: 1;
+    min-width: 100%;
+    position: fixed;
     padding: 5px 0px;
-    background-color: orange;
+    background-color: #FF6900;
 }
 /* UTILITY CLASS */
 
 .container{
-    max-width: 960px;
+    max-width: 1200px;
     margin: auto;
+}
+
+.d-none{
+    display:none;
 }
 
 .d-flex{
@@ -24,9 +31,21 @@ header{
     display: flex;
 }
 
-/* ////////////////////////////////// */
+/*  VARIABILI */
+:root{
+    --bg-discount:red;
+    --bg-info-discount: green;
+    }
 
+
+
+
+/* ////////////////////////////////// */
+.container-header{
+    align-items: center;
+}
 .filters a{
+    font-size: 1.2rem;
     padding: 3px;
     color: #fff;
     text-decoration: none;
@@ -34,18 +53,21 @@ header{
 }
 
 nav{
+    gap:0.5rem;
     align-items: center;
 }
 
 nav a svg{
+    color: #fff;
     padding: 2px;
-    min-width: 1rem;
+    min-width: 1.2rem;
 }
+
 
 
 .header-logo img{
     vertical-align: middle;
-    max-width: 100px;
+    max-width: 150px;
 }
 
 .container-header div{
@@ -59,6 +81,8 @@ nav a svg{
 /* ///////////// MAIN //////////////// */
 
 .card{
+    margin: 1rem 0rem;
+    position: relative;
     background-color: #fff;
     flex-basis: calc((100% - 2rem )/  3);
     min-height: 100px;
@@ -69,8 +93,98 @@ nav a svg{
 }
 
 .contain-card{
-    padding: 2rem 0rem;
+    padding: 5rem 0rem;
     gap:  1rem;
     flex-wrap: wrap;
 }
+
+.card .brand{
+    font-size: 0.8rem;
+}
+
+.contain-card .discount{
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+}
+
+.discount span{
+    padding: 0.3rem 0.5rem;
+    color: #fff;
+    display: inline-block;
+}
+
+.discount span{
+    background-color: var(--bg-discount);
+}
+
+.discount .info{
+    background-color: var(--bg-info-discount) ;
+}
+
+.card:hover .second-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+}
+
+.card .discount-price{
+    color: red;
+}
+
+.card .discount-price .true-price{
+    color: black;
+}
+
+.like-element svg{
+    max-width: 3rem;
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+}
+
+.like-element svg:hover{
+    color: red;
+}
+
+
+
+/* /////////////////FOOTER//////////// */
+
+footer{
+    color: #fff;
+    background-color: #4d4d4d;
+}
+
+.container-footer{
+    padding: 1.5rem 0rem;
+    justify-content: space-between;
+}
+
+
+.container-footer .license :first-child{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.license a{
+    padding: 0rem 0.3rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.social a svg{
+    color: #fff;
+    width: 2rem;
+    margin-top: 1rem;
+
+}
+
+
+
+
 
